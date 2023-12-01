@@ -3,46 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Motivational Poems Generator</title>
   </head>
   <body>
-    <header>
-      <h1>AI Motivational Poems Generator</h1>
-    </header>
+    <div class="container">
+      <header>
+        <h1>AI Motivational Poems Generator</h1>
+      </header>
 
-    <main>
-      <form action="">
-        <input
-          type="text"
-          placeholder="Enter the title of a motivational poem"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
+      <main>
+        <form id="poem-generator-form">
+          <input
+            type="text"
+            placeholder="Enter the title of a motivational poem"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
 
-      <div>
-        Invictus
-        <br />
-        Out of the night that covers me,
-      </div>
-    </main>
+        <div class="poem" id="poem"></div>
+      </main>
 
-    <footer>
-      <p>
-        This AI project was coded by <a href="#">Sonique Middleton</a>, it is
-        open sourced
-        <a
-          href="https://github.com/soniqmidd/motivational-poems"
-          target="_blank"
-        >
-          on Github</a
-        >, and hosted
-        <a href="https://prismatic-torte-4f1e41.netlify.app"> on Netlify</a>
-      </p>
-    </footer>
+      <footer>
+        <p>
+          This AI project was coded by <a href="#">Sonique Middleton</a>, it is
+          open sourced
+          <a
+            href="https://github.com/soniqmidd/motivational-poems"
+            target="_blank"
+          >
+            on Github</a
+          >, and hosted
+          <a href="https://prismatic-torte-4f1e41.netlify.app"> on Netlify</a>
+        </p>
+      </footer>
+    </div>
 
     <script src="src/index.js"></script>
   </body>
